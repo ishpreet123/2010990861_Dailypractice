@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         alert ("hello alert");
+        </script>
+</head>
+<body>
+    <h1> hello P</h1>
+    <p id="p1"></p>
+    <h2 id="p2"></h2>
+    <h3 id="h3"></h3>
+    <h1 id="func"></h1>
+    <h2 id ="ss"></h2>
+
+    <script>
+        var price1=1;
+        var price2=8;
+        var firstName="john";
+        var lastName="Doe";
+        var total=price1+price2;
+        var n1 = Number("5");
+        var n2= 6;
+        let person1 = {
+            firstName: "Rahul",
+            lastName: "Sharma",
+            age:30,
+            eyecolor:"blue",
+        };
+        var n =  Number("123");
+        n = n+2;
+        var s= "2";
+        s=n+s;
+        document.getElementById("p1").innerHTML = "total is " + total;
+        document.getElementById("h3").innerHTML = "Fullname is " + firstName + " " + lastName;
+        document.getElementById("p2").innerHTML = n1+n2;
+        document.getElementById("func").innerHTML= person1.firstName + " " + "& age is " + person1.age + " "
+         + "eyecolor is " + " " +  person1.eyecolor;
+        document.getElementById("ss").innerHTML = s;
+
+
+    </script>
+</body>
+</html>
