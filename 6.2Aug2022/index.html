@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myfunc(){
+            //console.log("hello");
+            //alert("hello");
+            //document.write("hello everyone");
+            // let n1= document.getElementById("n1").value;
+            // alert(n1);
+            if(document.getElementById("n1").value.length==0){
+                alert("empty");
+            }
+            else{
+                let n1 = document.getElementById("n1").value;
+                alert(n1);
+            }
+        }
+        function newfunc(){
+            let n2 = document.getElementById("n2").value;
+            if(n2==null || n2 == "" || n2==" "){
+                document.getElementById("p1").innerHTML="<span style='color : red;background-color:yellow'>don't write anything</span>";
+            }
+            else{
+                document.getElementById("p1").innerHTML=alert(n2);
+                //alert(n1);
+            }
+        }
+        function add(){
+            let n3= document.getElementById("n3").value;
+            let n4=document.getElementById("n4").value;
+            n3=Number(n3);
+            n4=Number(n4);
+            // let n5=document.getElementById("h22").innerHTML=n3+n4;
+            // document.write(n5);
+            if(!isNaN(n3)&& !isNaN(n4)){
+                document.getElementById("h22").innerHTML=n3+n4;
+            }
+            else{
+                document.getElementById("h22").innerHTML="<span style='color:blue'>Entered value is not a number</span>";
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" name="n1" id="n1"> 
+    <button onclick="myfunc()"> function
+    </button><br><br><br>
+    <input type="text" name="n2" id="n2"> 
+    <button onclick="newfunc()"> my function
+       </button><br><br>
+       <input type="text" name="n3" id="n3"/> 
+       <input type="text" name="n4" id="n4"/> 
+       <button onclick="add()"> Add function
+    </button>
+    <h2 id="h22"> </h2>
+       <p id="p1"></p>
+</body>
+</html>
