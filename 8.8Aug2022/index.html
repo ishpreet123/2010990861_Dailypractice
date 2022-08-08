@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #var {
+            color:red;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <p id="var"></p>
+    <script>
+        // document.getElementById("demo").innerHTML=Math.round(4.7)+ "  ";
+        // document.getElementById("demo").innerHTML+=Math.pow(5,2)+ "  ";
+        // document.getElementById("demo").innerHTML+=Math.sqrt(25)+ "  ";
+        // document.getElementById("demo").innerHTML+=Math.abs(-4)+ "  ";
+        // document.getElementById("demo").innerHTML+=Math.max(0,23,159,-98,45)+ "  ";
+        // document.getElementById("demo").innerHTML+=Math.min(5,2,-90,453);
+        var str  = document.getElementById("var").innerHTML="learning is for forever ";
+        var pattern =document.getElementById("var").innerHTML= /for/g;
+        var str2=document.getElementById("var").innerHTML= str.replace(pattern,"best");
+        document.write(str2);
+
+    </script>
+</body>
+</html>
