@@ -1,0 +1,27 @@
+GITHUB
+	############### or create a new repository on the command line
+				    echo "# git_learning" >> README.md
+                                            git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ishpreet123/git_learning.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/ishpreet123/git_learning.git
+git branch -M main
+git push -u origin main
+
+
+…or create a new repository on the command line
+echo "# 2010990861_Dailypractice" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ishpreet123/2010990861_Dailypractice.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/ishpreet123/2010990861_Dailypractice.git
+git branch -M main
+git push -u origin main

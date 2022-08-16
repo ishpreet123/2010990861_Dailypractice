@@ -1,0 +1,138 @@
+to check version 
+-->git -- version
+
+to check mail
+-->git config --global user.email
+
+set the config such as name and email
+-->git config --global user.name "Ishpreet kaur"
+
+
+-->to go from one directory to another and making of file 
+C:\Users\hp>d:
+
+D:\>cd git_learning
+
+D:\git_learning>git init
+Initialized empty Git repository in D:/git_learning/.git/
+
+D:\git_learning>
+
+steps:-
+git init (within a folder git_learning in d: drive )
+sum.java (create a file)
+get status (in cmd)
+ --> to commit the file 
+git add sum.txt-- file name
+to check whether the file is commit or not
+git status
+git add sum.java -for add file to stagging area
+
+
+--> to commit file
+git commit -m(m for message) "committed sum.java/txt file" --> now the file is ready to go in the git
+git log --> it will display message of all the files/commands.
+
+# master is branch name which is main branch. 
+
+--> git checkout 
+# if we want to move from second file to first file we use git checkout (hexadecimal code of first file).
+-->   How to check branch 
+small changes recording the history of file
+
+git branch /how to checkout from branch
+if the * coming before head then checkout from master branch .  head is not any branch ,it will not store any commit.
+git checkout master
+ creating new branch --> git branch dev (dev is new branch)
+git branch  -- it will list out all the branch present.
+output: dev 
+*master
+  --> to point out dev we have to in dev branch to get the detail
+--> git checkout dev
+output -- switched to branch 'dev'
+// creating multiply.java  file
+git add multiply.java
+//git commit -m "committed multiply file"
+output:-
+D:\git_learning>git commit -m "committed multiply file"
+[dev b0d345a] committed multiply file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 multiply.java
+
+D:\git_learning>git status
+On branch dev
+nothing to commit, working tree clean
+
+D:\git_learning>git log
+commit b0d345ac9368217f8305434f60cc7b520706154a (HEAD -> dev)
+Author: Ishpreet Kaur <ishpreet0861.be20@chitkara.edu.in>
+Date:   Mon Jul 11 09:59:08 2022 +0530
+
+    committed multiply file
+
+commit 669716524f1785ab97f455ac7c6ec851c63cfc23 (master)
+Author: Ishpreet Kaur <ishpreet0861.be20@chitkara.edu.in>
+Date:   Thu Jul 7 10:26:05 2022 +0530
+
+    hello world
+
+commit 337fff4289474d832e458cb058c95ed9bcaac0e3
+Author: Ishpreet Kaur <ishpreet0861.be20@chitkara.edu.in>
+Date:   Thu Jul 7 10:03:23 2022 +0530
+
+    commited sum.txt file
+
+--> now we will switch to master branch
+git checkout master
+output:-
+D:\git_learning>git checkout master
+Switched to branch 'master'
+##merging dev branch in master branch
+--> git merge dev 
+output:-
+D:\git_learning>git log
+commit b0d345ac9368217f8305434f60cc7b520706154a (HEAD -> master, dev)
+Author: Ishpreet Kaur <ishpreet0861.be20@chitkara.edu.in>
+Date:   Mon Jul 11 09:59:08 2022 +0530
+
+    committed multiply file
+
+commit 669716524f1785ab97f455ac7c6ec851c63cfc23
+Author: Ishpreet Kaur <ishpreet0861.be20@chitkara.edu.in>
+Date:   Thu Jul 7 10:26:05 2022 +0530
+
+    hello world
+
+commit 337fff4289474d832e458cb058c95ed9bcaac0e3
+Author: Ishpreet Kaur <ishpreet0861.be20@chitkara.edu.in>
+Date:   Thu Jul 7 10:03:23 2022 +0530
+
+    commited sum.txt file
+
+
+
+
+
+          GITHUB
+	############### or create a new repository on the command line
+				    echo "# git_learning" >> README.md
+                                            git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ishpreet123/git_learning.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/ishpreet123/git_learning.git
+git branch -M main
+git push -u origin main
+
+
+
+git remote add origin https://github.com/ishpreet123/letslearngit.git
+
+
+
+
+ 
+

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Assignment2</title>
+    <style>
+         #mainbox{
+            box-sizing: border-box;
+            height:700px;
+            width:100%;
+        }
+        body{
+            background-image:linear-gradient(to bottom, #f56942,#b3a69b);
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+        h3{
+            text-align: center;
+            text-shadow:2px 2px 5px;
+            font-size: 40px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-weight:bold;
+            color:rgba(255, 255, 255, 0.826);
+            padding-top:40px;
+            animation-name:abc;
+            animation-duration:4s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes abc {
+                0%   {color: ghostwhite;}
+                25%  {color: grey;}
+                50%  {color:aliceblue;}
+                100% {color:bisque;}
+            
+        }
+        #box1{
+            background-color:bisque;
+            width:50%;
+            height:200px;
+            border:2px solid black;
+            margin-left:25%;
+            margin-top:7%;
+            padding-top:50px;
+            padding-bottom: 10px;
+            border-radius: 20px;
+            text-align:center;
+
+
+        }
+        #label1{
+            width:51%;
+            height:25px;
+            padding:14px;
+            border:3px solid black;
+            border-radius:10px;
+
+        }
+        #b1{
+            background-color: #fa9366;
+            border-radius: 10px;
+            border:3px solid black;
+            margin:50px;
+            padding:10px;
+            height:43px;
+            width:55%;
+            text-shadow: 2px 2px white;
+            font-size: large;
+            font-weight: bold;
+            text-align:center;
+        }
+        #square{
+            background-color:#893916;
+            height:0px;
+            width:0px;
+            /* border:2px solid white; */
+            margin-left:40%;
+            margin-top:2%; 
+            transition-duration: 1.5s;
+            transition-delay:0.5s;
+        }
+    </style>
+    <script>
+        function myFunction(){
+            let n1 = document.getElementById("label1").value;
+            if(n1=="" || n1==null || n1==" "){
+                alert("Enter a Number");
+            }
+            else{
+                n1=Number(n1);
+                let digitCounting=n1.toString().length;
+                if(!isNaN(n1)&& digitCounting==5){
+                    var digits= n1.toString().split("");
+                    var realDigits= digits.map(Number);
+                    let sum=0;
+                    for(let i =0;i<realDigits.length;i++){
+                        sum+=realDigits[i];
+                    } 
+                    document.getElementById("square").style.width=sum+"px";
+                    document.getElementById("square").style.height=sum+"px";
+                    document.getElementById("square").style.borderRadius=sum/5 +"px";
+                }
+                else{
+                    alert("Enter a number in which Digits Counting=5");
+                }
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <div id="mainbox">
+    <h3>Enter a number to create a Square Shape</h3>
+    <div id="box1">
+        <input type="number" name ="label1" id="label1" placeholder="Only 5 Digit Number"></input>
+        <button onclick="myFunction()" id="b1" >Create Square Shape</button>
+        </div>
+        <div id ="square"></div>
+    </div>
+
+</body>
+</html>
