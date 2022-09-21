@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="favicon.png"/>
+    <script src="index.js"></script>
+    <title>Calculate Weight</title>
+</head>
+<body>
+        <div id="mainbox">
+        <h1 id="headingone"> Your Weight on different Planets</h1>
+        <p id="headingthree">Ever wonder what you might weigh on other planets? Here's your chance to find out.</p>
+         <label id="headingfour">Enter Your Weight Here</label>
+             <input id="label1" type="number" placeholder="Enter Weight in (Kg)"></input>  
+        <!-- <button onclick="Calculate()">Calculate</button>   -->
+        <h1 class="headingtwo">The Planets</h1>
+        <div class="container">
+        <div>
+            <img class="image" src="mercury.jpg" alt="image" onclick="Calculate('mercury')">
+            <a href="https://solarsystem.nasa.gov/planets/mercury/overview/"  target="_blank">
+            <p class="name">Mercury</p>
+            </a>
+            <input class="label" id="mercury" disabled/>
+        </div>
+        <div>
+            <img class="image" src="venus.jpg" alt="image" onclick="Calculate('venus')">4
+            <a href="https://solarsystem.nasa.gov/planets/venus/overview/"  target="_blank">
+            <p class="name">Venus</p>
+            <a>
+            <input class="label" id="venus" disabled/>
+        </div>
+        <div>
+            <img class="image"src="mars.jpg" alt="image" onclick="Calculate('mars')">
+            <a href="https://mars.nasa.gov/"  target="_blank">
+            <p class="name">Mars</p>
+            </a>
+            <input class="label" id="mars" disabled />
+        </div>
+        <div>
+            <img class="image"src="jupiter.png" alt="image" onclick="Calculate('juptier')">
+            <a href="https://solarsystem.nasa.gov/planets/jupiter/overview/"  target="_blank">
+            <p class="name">Juptier</p>
+            </a>
+            <input class="label" id="juptier" disabled/>
+        </div>
+        <div>
+            <img class="image"src="saturn.jpg" alt="image" onclick="Calculate('saturn')">
+            <a href="https://solarsystem.nasa.gov/planets/saturn/overview/"  target="_blank">
+            <p class="name">Saturn</p>
+            </a>
+            <input class="label" id="saturn" disabled/>
+        </div>
+        <div>
+            <img class="image"src="uranus.jpg" alt="image" onclick="Calculate('uranus')">
+            <a href="https://solarsystem.nasa.gov/planets/uranus/overview/" target="_blank">
+            <p class="name">Uranus</p>
+            </a>
+            <input class="label" id="uranus" disabled/>
+        </div>
+        <div>
+            <img class="image"src="neptune.jpg" alt="image" onclick="Calculate('neptune')">
+            <a href="https://solarsystem.nasa.gov/planets/neptune/overview/"  target="_blank">
+            <p class="name">Neptune</p>
+        </a>
+            <input class="label" id="neptune" disabled/>
+        </div>
+        <div>
+            <img class="image"src="pluto.jpg" alt="image" onclick="Calculate('pluto')">
+            <a href="https://solarsystem.nasa.gov/planets/dwarf-planets/pluto/overview/"  target="_blank">
+            <p class="name">Pluto</p>
+            </a>
+            <input class="label" id="pluto" disabled/>
+        </div>
+
+        </div>
+        <footer>
+            <p id="lastheading"> Developed by Ishpreet Kaur,G11</p>
+        </footer>
+</div>
+</body>
+</html>
