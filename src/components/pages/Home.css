@@ -1,0 +1,33 @@
+.box{
+    background-color: antiquewhite;
+}
+.head{
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    animation-name: abc;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    text-shadow: 5px 5px 10px black ;
+}
+@keyframes abc {
+    0%{color:red;}
+    25%{color:pink;}
+    50%{color:green;}
+    100%{color:brown;}
+    
+}
+.top{
+    color:#363d23;
+}
+card-body{
+    display:none;
+}
+.card:hover{
+    box-shadow:  5px 5px 10px rgb(124, 169, 206);
+    transition-property: width height border-radius;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    width:270px;
+    height:270px;
+    /* border-radius:100px; */
+}

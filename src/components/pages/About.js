@@ -6,9 +6,10 @@ import {BsGlobe2} from "react-icons/bs";
 const About = () => {
   return (
     <>
+    <div className="box1">
  <div className="container-fluid text-center">
   <h2>About</h2>
-  <h4>What we offer</h4>
+  <h3>We will offer with the best that you deserve....</h3>
   <br/>
   <div className="row">
     <div className="col-sm-4">
@@ -31,20 +32,21 @@ const About = () => {
     <div className="row">
     <div className="col-sm-4">
       <span className="glyphicon glyphicon-leaf logo-small"><AiTwotoneHighlight/></span>
-      <h4>GREEN</h4>
+      <h4>SUPPORT</h4>
       <p>Lorem ipsum dolor sit amet..</p>
     </div>
     <div className="col-sm-4">
       <span className="glyphicon glyphicon-certificate logo-small"><AiFillSafetyCertificate/></span>
-      <h4>CERTIFIED</h4>
+      <h4>CERTIFIED COURSE</h4>
       <p>Lorem ipsum dolor sit amet..</p>
     </div>
     <div className="col-sm-4">
       <span className="glyphicon glyphicon-wrench logo-small"><AiFillTool/></span>
-      <h4 style={{color:"#303030"}}>HARD WORK</h4>
+      <h4 style={{color:"#303030"}}>QUALITY MATERIAL</h4>
       <p>Lorem ipsum dolor sit amet..</p>
     </div>
   </div>
+</div>
 </div>
 </>
   )

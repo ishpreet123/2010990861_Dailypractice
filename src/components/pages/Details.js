@@ -51,11 +51,11 @@ const Details = () => {
         </div>
 
 
-        <Link style={{margin:"0% 0% 1% 91%",backgroundColor:"blue"}} className="btn btn-primary" to="/users/add">Add User</Link>
-        <table class="table border shadow">
+        <Link style={{margin:"0% 0% 1% 91%",backgroundColor:"danger"}} className="btn btn-warning" to="/users/add">Add User</Link>
+        <table class="table border shadow table table-dark table-hover">
           <thead class="thead-dark">
             <tr>
-              <th scope="col">#</th>
+              <th class=""scope="col">#</th>
               <th scope="col">Name</th>
               <th scope="col">User Name</th>
               <th scope="col">Email</th>
@@ -70,7 +70,7 @@ const Details = () => {
                 <td>{user.username}</td>
                 <td>{user.email}</td>
                 <td>
-                  <Link class="btn btn-primary mr-2" to={`/users/${user.id}`}>
+                  <Link class="btn btn-info mr-2" to={`/users/${user.id}`}>
                     View
                   </Link>
                   <Link

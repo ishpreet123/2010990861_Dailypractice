@@ -32,6 +32,7 @@ const Contact = () => {
         <div className="container">
             <div className="contact-form">
                 <form action='#' className='contact-inputs'>
+                    <h1>For Any Queries..</h1>
                     <h1>CONTACT US</h1>
                     <div className="inputBox">
                         <h5>Enter Username</h5>
